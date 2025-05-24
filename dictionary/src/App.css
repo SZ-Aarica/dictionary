@@ -6,30 +6,40 @@ header{
     font-weight: 700;
     font-size: 39px;
     color: #ff7e67;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 600;
+  
    
 }
 form{
     margin-top: 30px;
-    text-align: center;
+    margin-bottom: 13px;
 
 }
 h2{
     color:#a2d5f2;
 }
 input{
-  padding: 10px 0px;
-  border-radius: 8px;
-    width: 20cm;
+ 
+  padding: 8px 18px;
+  border-radius: 28px;
+  width: 18cm;
     font-size: 29px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   
 }
 footer{
     margin-top: 25px;
     color: #a2d5f2;
+    text-align: center;
   
 }
 .app{
-    background: #113f67;
+    background: #07689f;
+
+   
+    
 }
 .partOfSpeech{
     font-size: 30px;
@@ -39,15 +49,17 @@ footer{
     color: #fafafa;
     margin-left: 28px;
 }
-.result{
-    width: 20cm;
-   margin-left: 10cm;
-}
+
 .synonym{
    
     margin-left: 1cm;
 }
-    
+   
+.dictionary{
+    max-width: 50cm;
+    padding: 10px 11cm;
+
+}
 
 @media(max-width:1000px){
     .result{
@@ -56,6 +68,9 @@ footer{
     input{
         margin-left: 1cm;
         width: 15cm;
+    }
+    .dictionary{
+        padding: 10px 3cm;
     }
 }
 

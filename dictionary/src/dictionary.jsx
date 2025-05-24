@@ -9,7 +9,7 @@ function dictionary() {
       setDefenition(response.data);
     }
     event.preventDefault();
-    alert(keyWord);
+    //alert(keyWord);
     let key = "c1f9c61a43fbf0460to00d7010dfa109";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyWord}&key=${key}`;
     axios.get(apiUrl).then(handleResponse);

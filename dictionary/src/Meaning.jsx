@@ -1,5 +1,5 @@
 function Meaning(probs) {
-  console.log(probs);
+  //console.log(probs);
   if (probs.meaning !== null) {
     return (
       <div className="meaning">
