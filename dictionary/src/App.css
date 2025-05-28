@@ -1,10 +1,11 @@
 :root{
-    background: #07689f;
+    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
     
 }
 header{
+    margin-top: 18px;
     font-weight: 700;
-    font-size: 39px;
+    font-size: 45px;
     color: #ff7e67;
     font-family: "Tagesschrift", system-ui;
     font-weight: 600;
@@ -18,6 +19,15 @@ form{
 }
 h2{
     color:#a2d5f2;
+    border: 1px solid #a2d5f2;
+    padding: 3px 14px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+    
+}
+.phonetic{
+    display: flex;
 }
 input{
  
@@ -35,11 +45,9 @@ footer{
     text-align: center;
   
 }
-.app{
-    background: #07689f;
 
-   
-    
+.app{
+    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);  
 }
 .partOfSpeech{
     font-size: 30px;
@@ -48,23 +56,27 @@ footer{
 .defenition{
     color: #fafafa;
     margin-left: 28px;
+   
 }
 
-.synonym{
-   
-    margin-left: 1cm;
-}
    
 .dictionary{
     max-width: 50cm;
     padding: 10px 11cm;
 
+}.meaning{
+    background: #ff7e67;
+    border-radius: 15px;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+li{
+    list-style: none;
 }
 
 @media(max-width:1000px){
-    .result{
-        margin-left: 38px;
-    }
+   
     input{
         margin-left: 1cm;
         width: 15cm;
