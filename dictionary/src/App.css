@@ -1,12 +1,17 @@
 :root{
-    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+   
+    --background-color:#4B352A;
+    background: #4B352A;
+    --font-color1: #4B352A;
+    --background-secrion: #B2CD9C;
+    --font-color2 : #CA7842;
     
 }
 header{
     margin-top: 18px;
     font-weight: 700;
     font-size: 45px;
-    color: #ff7e67;
+    color: #F0F2BD;
     font-family: "Tagesschrift", system-ui;
     font-weight: 600;
   
@@ -18,8 +23,8 @@ form{
 
 }
 h2{
-    color:#a2d5f2;
-    border: 1px solid #a2d5f2;
+    color:#F0F2BD;
+    border: 2px solid #F0F2BD;
     padding: 3px 14px;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -30,10 +35,10 @@ h2{
     display: flex;
 }
 input{
- 
-  padding: 8px 18px;
+ background: var(--background-secrion);
+  padding: 8px 10px;
   border-radius: 28px;
-  width: 18cm;
+  width: 22cm;
     font-size: 29px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -41,31 +46,30 @@ input{
 }
 footer{
     margin-top: 25px;
-    color: #a2d5f2;
+    color: var(--background-secrion);
     text-align: center;
   
 }
 
 .app{
-    background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);  
+   background: var(--background-color);
+   
 }
 .partOfSpeech{
     font-size: 30px;
-    color:#a2d5f2;
+    color: var(--font-color1);
 }
 .defenition{
-    color: #fafafa;
+    color: var(--font-color2);
     margin-left: 28px;
    
-}
-
-   
+}  
 .dictionary{
-    max-width: 50cm;
-    padding: 10px 11cm;
+    max-width: 60cm;
+    padding: 10px 9cm;
 
 }.meaning{
-    background: #ff7e67;
+    background:var(--background-secrion);
     border-radius: 15px;
     padding: 8px;
     margin-bottom: 8px;
@@ -73,6 +77,16 @@ footer{
 }
 li{
     list-style: none;
+}
+.photos{
+    padding: 10px;
+    background: var(--background-secrion);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,270px);
+    gap: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
 }
 
 @media(max-width:1000px){

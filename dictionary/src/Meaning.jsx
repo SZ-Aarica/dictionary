@@ -7,7 +7,7 @@ function Meaning(probs) {
         <div className="partOfSpeech">
           {" "}
           <strong> {probs.meaning.partOfSpeech}</strong>
-          ____________________________________________
+          _______________________________________________________
         </div>
         <div className="defenition">
           {probs.meaning.definition !== null ? (
